@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: yookassa
+    version: 0.0.1
+  data:
+    mongodb:
+      username: ${DB_USERNAME:usrDev}
+      password: ${DB_PASSWORD:pasDev}
+      uri: mongodb://${DB_HOST:localhost}:${DB_PORT:27017}/${DB_NAME:yookassa}
+
+server:
+  port: 8091
+  error:
+    whitelabel:
+      enabled: false
+
+app:
+  swagger-server: ${SWAGGER_SERVER:http://localhost:8091}
+  api-key-yookassa: ${API_KEY_YOOKASSA:test_ZZoaPUYfjWpRbeLGJyom6plQiRuaTOYml8_TrwnQeGk}
+  id-magazine-yookassa: ${ID_MAGAZINE_YOOKASSA:367632}
+  yookassa-create-url: ${YOOKASSA_CREATE_URL:https://api.yookassa.ru/v3/payments}
+  return-url: ${RETURN_URL:https://www.example.com/return_url}
+  db-name: ${DB_NAME:yookassa}
+  db-host: ${DB_HOST:localhost}
+  db-port: ${DB_PORT:27017}
