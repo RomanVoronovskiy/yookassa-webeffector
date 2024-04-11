@@ -24,7 +24,7 @@ public class SwaggerConfig {
                         .license(new License().name("OpenAPI 3").url("http://springdoc.org")))
                 .externalDocs(new ExternalDocumentation()
                         .description("Техническое задание от Максима Гордеева (webeffector.ru)")
-                        .url(" йцу фыв ячс "))//todo оставить ссыль на тех задание
+                        .url("https://github.com/RomanVoronovskiy/yookassa-webeffector/blob/master/Readme.md"))
                 .addServersItem(new Server().url(server));
     }
 

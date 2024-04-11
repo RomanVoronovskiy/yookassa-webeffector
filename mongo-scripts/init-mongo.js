@@ -10,8 +10,6 @@ db.createUser(
         ]
     }
 );
-// Создание коллекции status_info
 db.createCollection("status_info");
 
-// Создание коллекции payment_info
 db.createCollection("payment_info");

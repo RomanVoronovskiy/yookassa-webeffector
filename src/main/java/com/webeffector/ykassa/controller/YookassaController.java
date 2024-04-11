@@ -25,7 +25,7 @@ public class YookassaController {
     @ApiResponse(responseCode = "200", description = "Успешное создание платежа", content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE))
     @ApiResponse(responseCode = "500", description = "Другая/неожиданная ошибка сервера", content = @Content(mediaType = MediaType.APPLICATION_JSON_VALUE))
     @PostMapping("/create")
-    public ResponseEntity<UrlConfirmation> createPayment(@RequestBody UserRequest request) throws Exception {
+    public ResponseEntity<UrlConfirmation> createPayment(@RequestBody UserRequest request) {
         return yookassaService.createPayment(request);
     }
 
